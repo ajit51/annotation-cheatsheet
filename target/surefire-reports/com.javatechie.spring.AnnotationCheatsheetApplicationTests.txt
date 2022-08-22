@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.javatechie.spring.AnnotationCheatsheetApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.485 s <<< FAILURE! - in com.javatechie.spring.AnnotationCheatsheetApplicationTests
+contextLoads  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.javatechie.spring.entity.Student, at table: student_tbl, for columns: [org.hibernate.mapping.Column(student)]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.javatechie.spring.entity.Student, at table: student_tbl, for columns: [org.hibernate.mapping.Column(student)]
+Caused by: org.hibernate.MappingException: Could not determine type for: com.javatechie.spring.entity.Student, at table: student_tbl, for columns: [org.hibernate.mapping.Column(student)]
+

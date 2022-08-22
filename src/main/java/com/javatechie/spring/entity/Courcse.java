@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "STUDENT_TBL")
+@Table(name = "COURSE_TBL")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
